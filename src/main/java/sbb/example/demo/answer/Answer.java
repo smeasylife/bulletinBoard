@@ -21,6 +21,7 @@ public class Answer {
 
     private LocalDateTime createDate;
 
+    //하나의 질문에 여러 개의 답변이 달릴 수 있으니 Answer는 Many고 Question이 One이 된다.
     @ManyToOne
     private Question question;
 
